@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefonica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/phone-list.png" alt="telefone fixo">
+            <h1>Agenda</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome-contato" required placeholder="Digite o nome do contato">
+            <input type="tel" id="numero-contato" required placeholder="xx xxxxx-xxxx"
+                pattern="([0-9]{2}) [0-9]{4,5}-[0-9]{4}">
+            <select name="" id="tipo">     
+                <option value="telefone">Telefone</option>
+                <option value="celular">Celular</option>
+            </select>
+            <button>Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Numero do contato</th>
+                    <th>Tipo de contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de contatos</td>
+                    <td id="total-contatos">---</td>
+                    <td id="tipo"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
