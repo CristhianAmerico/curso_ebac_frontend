@@ -1,0 +1,53 @@
+*{    
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{background: rgb(58,180,142);
+    background: linear-gradient(90deg, rgba(58,180,142,1) 0%, rgba(201,29,253,1) 100%);
+}
+.container{
+    background-color: rgba(0, 0 , 0 , 0.3);
+    border-radius: 10px;
+    border: 1px solid ;
+    max-width: 380px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.container h1{
+    color: #fff;
+    text-align: center;
+}
+
+.form-campo{
+    margin: 15px 0;
+}
+
+.form-campo label{
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}   
+
+.form-campo input{
+    padding: 5px;
+    width: 100%;
+}
+
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
