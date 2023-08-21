@@ -1,0 +1,103 @@
+* {
+    /*reset*/
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #5da91b;
+    padding-top: 16px;
+    color: #fff;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sobre-a-loja img {
+    height: 250px;
+    margin-right: 24px;
+    max-width: 400px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-produtos {
+    flex-wrap: wrap;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 20%;
+    margin-bottom: 24px;
+}
+
+.lista-produtos img {
+    height: 180px;
+    max-width: 100%;
+}
+
+.lista-produtos h3 {
+    margin: 16px 0;
+}
+
+.lista-produtos p {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        display: block;
+        max-width: 90%;
+        margin-top: 10px;
+    }
+}
