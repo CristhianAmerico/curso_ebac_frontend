@@ -42,7 +42,7 @@ header nav li a {
 #sobre-a-loja img {
     height: 250px;
     margin-right: 24px;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 
@@ -61,7 +61,7 @@ section h2 {
 
 .lista-produtos li {
     list-style: none;
-    max-width: 20%;
+    width: 20%;
     margin-bottom: 24px;
 }
 
@@ -97,10 +97,11 @@ button {
 
 @media screen and (max-width: 1023px) {
 
-    header{
+    header {
         text-align: center;
     }
-    header h1{
+
+    header h1 {
         margin-bottom: 10px;
     }
 
@@ -115,22 +116,36 @@ button {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         max-width: 90%;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    .lista-produtos li{
+        width: 100%;
+    }
+
+    #sobre-a-loja img {
+        height: auto;
+        width: 100%;
     }
 }
-@media screen and (max-width: 640px){
-    header{
+
+@media screen and (max-width: 640px) {
+    header {
         text-align: center;
     }
-    header h1{
+
+    header h1 {
         margin-bottom: 10px;
     }
 
-    .lista-produtos{
+    .lista-produtos {
         max-width: 90%;
         grid-template-columns: 1fr;
     }
 
-    #sobre-a-loja img{
-        height: 100%;
+    #sobre-a-loja img {
+        height: auto;
+        width: 100%;
     }
 }
