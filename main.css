@@ -1,0 +1,119 @@
+*{
+    /*reset do site*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header{
+    /*estilizando apenas o filho direto do body usando '>'*/
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+header li{
+    margin-left: 16px;
+    font-weight: bold;
+    /*Alterando font*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    /*torna elementos lado a lado*/
+}
+header li a{
+    text-decoration: none;
+    color: #f5f6fa;
+}
+
+.container{
+    width: 1366px;
+    /*largura em px*/
+    margin: 0 auto;
+    /*centraliza elementos*/
+}
+.articles{
+    display: flex;
+    /*agrupa os elementos um ao lado do outro*/
+    flex-wrap: wrap;
+    /*obriga os itens a quebrar linha*/
+    justify-content: space-between;
+    /*dividi por igual os espaços entre os itens*/
+}
+
+.articles article img{
+    width: 100%;
+    /*height: 180px;*/
+    /*limitação de alturas das imagens*/
+}
+
+.articles article{
+    width: 30%;
+    /*limitação da largura dos article*/
+}
+section{
+    /*Espaçamento interno*/
+    padding: 16px;
+}
+section h2, 
+.articles article {
+    /*usanda mesma regra para duas classes diferentes com o uso da ','*/
+    margin-bottom: 16px;
+}
+.articles article h3{
+    margin: 16px 0;
+}
+.articles article a{
+    margin-top: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;   
+    /*para nao sobrepor o texto*/
+    padding: 8px;
+    /*espaçamento interno do conteudo*/
+    background-color: blue;
+    /*cor de fundo*/
+    color: #fff;
+    /*cor do texto*/
+}
+.articles article a:hover{
+    /*hover executa a ação quando passado o mouse por cima*/
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a{
+    /*Alterando font*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles article h3{
+    font-size:  24px;
+}
+section h2{
+    font-size: 32px;
+}
+#sports{
+    /*red, green, blue e alpha*/
+    background-color: rgba(0, 255, 0, 0.1);
+}
+#sports .articles article a{
+    background-color: #009432;
+}
+#economy{
+    background-color: #f8f59f;
+}
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+#entertainment{
+    /*red, green, blue e alpha*/
+    background-color: rgba(35, 45, 244, 0.1);
+}
+#tecnology{
+    /*red, green, blue e alpha*/
+    background-color: rgba(255, 0, 0, 0.3);
+}
+#tecnology .articles article a{
+    background-color: #da0b0b;
+}
